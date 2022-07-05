@@ -3,12 +3,29 @@
 body{
     display: grid;
     grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 8fr;
     background-color: #dadada;
 }
 
 .header{
     grid-column-start: 2;
     grid-column-end: 3;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 2;
+    padding: 20px;
+}
+
+.header-greet{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 2;
+}
+
+.header-logo{
+    grid-row-start: 1;
+    grid-row-end: 3;
 }
 
 .main-content-header{
@@ -41,10 +58,14 @@ body{
 .main-content{
     grid-column-start: 2;
     grid-column-end: 3;
+    padding: 20px;
 }
-
+.announce{
+    text-align: right;
+}
 .projects-grid{
-    display: grid;n
+    display: grid;
+    grid-template-columns: 4fr 1fr;
 }
 .your-projects-grid{
     display: grid;
