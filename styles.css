@@ -1,0 +1,21 @@
+/* styles for admin dashboard*/
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.header {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.sidebar {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.main-content{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
