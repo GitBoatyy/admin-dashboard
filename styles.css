@@ -1,21 +1,65 @@
 /* styles for admin dashboard*/
 
-body {
+body{
     display: grid;
     grid-template-columns: 1fr 4fr;
+    background-color: #dadada;
 }
 
-.header {
+.header{
     grid-column-start: 2;
     grid-column-end: 3;
 }
 
-.sidebar {
+.main-content-header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.sidebar{
     grid-column-start: 1;
     grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: rgb(240, 82, 82);
+    height: 100vh;
+    display: grid;
+    grid-template-rows: .5fr 4fr 6fr;
+}
+
+.sidebar-header{
+    padding: 30px;
+}
+
+.sidebar-grid{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
 
 .main-content{
     grid-column-start: 2;
     grid-column-end: 3;
+}
+
+.projects-grid{
+    display: grid;n
+}
+.your-projects-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.projects-container{
+    border: 10px;
+    border-color: black;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    padding: 5px;
 }
