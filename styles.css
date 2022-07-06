@@ -3,7 +3,7 @@
 body{
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 110px;
+    grid-template-rows: 150px;
     background-color: rgb(218, 218, 218);
 }
 
@@ -12,20 +12,33 @@ body{
     grid-column-end: 3;
     display: grid;
     grid-template-columns: 3fr 2fr;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: auto;
     padding: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
 }
 
 .header-greet{
     padding: 20px;
     display: grid;
     grid-template-columns: 1fr 6fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr 2fr;
+}
+
+.header-greet-hi{
+font-size:12px;
+}
+
+.header-greet-name{
+    font-weight: bold;
 }
 
 .header-logo{
     grid-row-start: 1;
     grid-row-end: 3;
+    display: flex;
+    justify-content: center;
 }
 
 .header-search{
@@ -38,12 +51,20 @@ body{
     border: none;
     border-radius: 10px;
     width: 70%;
+    background-color: rgb(218, 218, 218);
 }
 
 .header-links{
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    justify-items: left;
+    display: flex;
+    justify-content: right;    
+    align-items: center;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.header-control{
+    display: flex;
+    justify-content: right;    
     align-items: center;
 }
 
@@ -54,6 +75,10 @@ button{
     border: none;
     height: 25px;
     width: 60px;
+}
+
+button:hover{
+    cursor: grab;
 }
 
 .sidebar{
@@ -81,8 +106,14 @@ button{
 ul{
     display: grid;
     grid-template-columns: 1fr 4fr;
+    align-items: center;
+    gap: 4px;
 }
 
+ul a{
+    color: white;
+    text-decoration: none;
+}
 
 
 .main-content-header{
@@ -121,6 +152,7 @@ ul{
     border-color: black;
     border-radius: 10px;
     background-color: aliceblue;
+    position: relative;
 }
 
 .project-name{
@@ -131,17 +163,33 @@ ul{
     color: rgb(97, 97, 97);
 }
 .project-links{
-    display: flex;
-    justify-content: right;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
     filter: invert(100%);
-    position: relative;
-    bottom: ;
+
 }
 
 .announcements{
 }
 
 .announce-container{
+}
+
+.announcement-border {
+    width: 100%;
+    height: 1px;
+    background-color: lightgray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.announce-content{
+    color: rgb(97, 97, 97);
+}
+
+.announce-topic{
+    font-weight: bold;
 }
 
 .trending{
@@ -165,4 +213,8 @@ ul{
 
 li{
     padding: 5px;
+}
+
+div.img{
+    height: 24px;
 }
