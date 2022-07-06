@@ -3,8 +3,8 @@
 body{
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 5fr;
-    background-color: beige;
+    grid-template-rows: 110px;
+    background-color: rgb(218, 218, 218);
 }
 
 .header{
@@ -20,12 +20,40 @@ body{
     padding: 20px;
     display: grid;
     grid-template-columns: 1fr 6fr;
-    grid-template-rows: 2;
+    grid-template-rows: 1fr;
 }
 
 .header-logo{
     grid-row-start: 1;
     grid-row-end: 3;
+}
+
+.header-search{
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+}
+.search{
+    border: none;
+    border-radius: 10px;
+    width: 70%;
+}
+
+.header-links{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    justify-items: left;
+    align-items: center;
+}
+
+button{
+    background-color: rgb(240, 82, 82) ;
+    color: white;
+    border-radius: 25px;
+    border: none;
+    height: 25px;
+    width: 60px;
 }
 
 .sidebar{
@@ -38,16 +66,15 @@ body{
     display: grid;
     grid-template-rows: .5fr 4fr 6fr;
     color: white;
+    justify-content: center;
+
 }
 
 .sidebar-header{
     padding: 30px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     font-size: 24px;
     align-items: center;
-    justify-items: center;
-    justify-content: center;
 
 }
 
@@ -85,22 +112,36 @@ ul{
     grid-row-end: 4;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(1fr);
     gap: 10px;
 }
 
 .projects-container{
     padding: 30px;
     border-color: black;
-    border-radius: 10%;
+    border-radius: 10px;
     background-color: aliceblue;
+}
 
+.project-name{
+    font-weight: bold;
+}
+
+.project-content{
+    color: rgb(97, 97, 97);
+}
+.project-links{
+    display: flex;
+    justify-content: right;
+    filter: invert(100%);
+    position: relative;
+    bottom: ;
 }
 
 .announcements{
 }
 
 .announce-container{
-    padding: ;
 }
 
 .trending{
