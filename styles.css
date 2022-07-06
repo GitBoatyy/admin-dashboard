@@ -3,8 +3,8 @@
 body{
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 8fr;
-    background-color: #dadada;
+    grid-template-rows: 1fr 5fr;
+    background-color: beige;
 }
 
 .header{
@@ -12,7 +12,7 @@ body{
     grid-column-end: 3;
     display: grid;
     grid-template-columns: 3fr 2fr;
-    grid-template-rows: 2;
+    grid-template-rows: 1fr 2fr;
     padding: 20px;
 }
 
@@ -26,13 +26,6 @@ body{
 .header-logo{
     grid-row-start: 1;
     grid-row-end: 3;
-}
-
-.main-content-header{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: space-between;
-    align-content: space-between;
 }
 
 .sidebar{
@@ -55,27 +48,65 @@ body{
     grid-template-rows: 1fr 1fr;
 }
 
+.main-content-header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-content: space-between;
+}
 .main-content{
     grid-column-start: 2;
     grid-column-end: 3;
     padding: 20px;
 }
+
 .announce{
-    text-align: right;
 }
+
+
 .projects-grid{
     display: grid;
     grid-template-columns: 4fr 1fr;
+    grid-template-rows: 20px 1fr 1fr;
+    gap: 10px;
 }
 .your-projects-grid{
+    grid-row-start: 2;
+    grid-row-end: 4;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 10px;
 }
 
 .projects-container{
-    border: 10px;
+    padding: 30px;
     border-color: black;
+    border-radius: 10%;
+    background-color: aliceblue;
+
 }
+
+.announcements{
+}
+
+.announce-container{
+    padding: ;
+}
+
+.trending{
+}
+
+.trending-link{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.trending-img{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
 
 ul{
     list-style: none;
