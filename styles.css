@@ -37,16 +37,26 @@ body{
     height: 100vh;
     display: grid;
     grid-template-rows: .5fr 4fr 6fr;
+    color: white;
 }
 
 .sidebar-header{
     padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 24px;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+
 }
 
-.sidebar-grid{
+ul{
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 4fr;
 }
+
+
 
 .main-content-header{
     display: grid;
