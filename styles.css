@@ -92,7 +92,6 @@ button:hover{
     grid-template-rows: .5fr 4fr 6fr;
     color: white;
     justify-content: center;
-
 }
 
 .sidebar-header{
@@ -100,7 +99,6 @@ button:hover{
     display: flex;
     font-size: 24px;
     align-items: center;
-
 }
 
 ul{
@@ -108,6 +106,7 @@ ul{
     grid-template-columns: 1fr 4fr;
     align-items: center;
     gap: 4px;
+    list-style: none;
 }
 
 ul a{
@@ -115,22 +114,23 @@ ul a{
     text-decoration: none;
 }
 
-
 .main-content-header{
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
     align-content: space-between;
 }
+
 .main-content{
     grid-column-start: 2;
     grid-column-end: 3;
     padding: 20px;
 }
 
-.announce{
+.content-label{
+    font-weight: bold;
+    padding: 10px;
 }
-
 
 .projects-grid{
     display: grid;
@@ -138,6 +138,7 @@ ul a{
     grid-template-rows: 20px 1fr 1fr;
     gap: 10px;
 }
+
 .your-projects-grid{
     grid-row-start: 2;
     grid-row-end: 4;
@@ -162,18 +163,12 @@ ul a{
 .project-content{
     color: rgb(97, 97, 97);
 }
+
 .project-links{
     position: absolute;
     bottom: 5px;
     right: 5px;
     filter: invert(100%);
-
-}
-
-.announcements{
-}
-
-.announce-container{
 }
 
 .announcement-border {
@@ -192,9 +187,6 @@ ul a{
     font-weight: bold;
 }
 
-.trending{
-}
-
 .trending-link{
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -204,15 +196,6 @@ ul a{
 .trending-img{
     grid-row-start: 1;
     grid-row-end: 3;
-}
-
-
-ul{
-    list-style: none;
-}
-
-li{
-    padding: 5px;
 }
 
 div.img{
