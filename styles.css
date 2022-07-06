@@ -201,3 +201,14 @@ ul a{
 div.img{
     height: 24px;
 }
+
+.footer {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    height: 80px;
+  }
